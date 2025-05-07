@@ -87,20 +87,10 @@ git clone https://github.com/AdityaBD45/WagerXPlay.git
 cd WagerXPlay
 
 2. Install Dependencies
-bash
-Copy
-Edit
 npm install
 3. Start the Development Server
-bash
-Copy
-Edit
 npm run dev
 The app will be live at:
-
-arduino
-Copy
-
 http://localhost:5173
 📝 License
 This project is licensed under the MIT License – meaning you're free to use, copy, modify, merge, publish, and distribute with attribution.
