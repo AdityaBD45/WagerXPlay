@@ -1,12 +1,117 @@
-# React + Vite
+# 🏏 WagerXPlay Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend application for **WagerXPlay**, a cricket sports betting simulation platform. Built with **React**, **Vite**, **Tailwind CSS**, and **Redux**, this project serves as an educational tool to help us learn frontend development, state management, and how to structure scalable UI for real-world applications.
 
-Currently, two official plugins are available:
+> ⚠️ **Disclaimer:** This project is for educational and skill-building purposes only. It is not intended for real-money gambling or commercial use.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🎯 Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### ✅ User Authentication
+- Secure login and registration flows.
+- JWT-based session management.
+- Persistent user session across reloads.
+
+### 🏏 Cricket Match Betting
+- Users can place bets on live or upcoming cricket matches.
+- Real-time odds are shown, synced with backend updates.
+- Bets are locked once the match begins.
+- Admin declares match results; winning bets are updated accordingly.
+
+### 💰 Deposit & Withdrawal System
+- Users can request deposits and withdrawals.
+- Admins approve or reject requests from a dashboard.
+- User balances are updated in real-time after admin actions.
+- Full deposit and withdrawal history available to the user.
+
+### 📃 Betting History
+- Users can track past bets with results (won/lost).
+- Matches are timestamped and matched to user activity.
+
+### 📊 Admin Controls (Accessible via Sidebar)
+- Declare match results manually.
+- Manage user deposit and withdrawal requests.
+
+### 🎨 UI/UX
+- Responsive design built with **Tailwind CSS**.
+- Navigation and layout follow modern UX standards.
+- Clean sidebar-based navigation for quick access to features.
+
+---
+
+## 🧱 Tech Stack
+
+| Tool              | Purpose                                |
+|-------------------|----------------------------------------|
+| **React**         | Frontend framework                     |
+| **Vite**          | Fast development server & bundler      |
+| **Tailwind CSS**  | Utility-first CSS framework            |
+| **Redux Toolkit** | Global state management                |
+| **React Router**  | Client-side routing                    |
+| **Axios**         | API requests to the backend            |
+
+---
+
+## 📁 Folder Structure
+
+WagerXPlay/
+├── public/ # Static assets
+├── src/
+│ ├── app/ # Redux store setup
+│ ├── components/ # Reusable UI components (e.g., Navbar, Sidebar)
+│ ├── features/
+│ │ ├── auth/ # Auth slice & logic
+│ │ ├── bets/ # Betting slice & API logic
+│ ├── pages/ # Main pages (Home, Bet, Login, etc.)
+│ ├── App.jsx # Main app with routes
+│ ├── main.jsx # App entry point
+│ └── index.css # Tailwind base styles
+├── index.html # HTML template
+├── package.json # Dependencies & scripts
+└── vite.config.js # Vite configuration
+
+yaml
+Copy
+Edit
+
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/AdityaBD45/WagerXPlay.git
+cd WagerXPlay
+
+2. Install Dependencies
+bash
+Copy
+Edit
+npm install
+3. Start the Development Server
+bash
+Copy
+Edit
+npm run dev
+The app will be live at:
+
+arduino
+Copy
+
+http://localhost:5173
+📝 License
+This project is licensed under the MIT License – meaning you're free to use, copy, modify, merge, publish, and distribute with attribution.
+
+🙏 Acknowledgements
+ReactJS Docs
+
+Redux Toolkit Docs
+
+Tailwind CSS Docs
+
+Render.com (for deployment)
+
+Built with ❤️ by AdityaBD45 for learning and exploration.
