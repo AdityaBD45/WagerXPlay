@@ -53,7 +53,7 @@ This is the frontend application for **WagerXPlay**, a cricket sports betting si
 
 ---
 
-## 📁 Folder Structure
+## 📁 Folder Structure (please view the readme file to see correctly structured folder) 
 
 WagerXPlay/
 ├── public/ # Static assets
@@ -70,11 +70,6 @@ WagerXPlay/
 ├── index.html # HTML template
 ├── package.json # Dependencies & scripts
 └── vite.config.js # Vite configuration
-
-yaml
-Copy
-Edit
-
 
 ---
 
