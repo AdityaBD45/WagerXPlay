@@ -82,12 +82,7 @@ function Navbar() {
                     💰 ₹{balance.toFixed(2)}
                   </span>
                 )}
-                <button
-                  onClick={handleLogout}
-                  className="text-red-300 hover:text-red-500 px-1 py-0.5"
-                >
-                  Logout
-                </button>
+              
               </>
             ) : (
               <>
