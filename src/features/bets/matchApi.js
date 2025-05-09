@@ -4,7 +4,7 @@ export async function fetchMatches() {
       if (!response.ok) throw new Error('Failed to fetch matches');
       
       const data = await response.json();
-      console.log("Fetched data from backend:", data);  // Now correctly logging the data
+     // console.log("Fetched data from backend:", data);  // Now correctly logging the data
 
       // Return data directly as it's already an array of matches
       return Array.isArray(data) ? data : [];
